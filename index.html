@@ -15,8 +15,8 @@
     </header>
 
     <div class="navbar">
-      <a href="https://live.staticflickr.com/1728/42736240511_91cd425b59_c_d.jpg" onclick="getElementById('modal-image').style.display='flex'">Link 1</a>
-      <a href="https://live.staticflickr.com/1945/45582150001_7bda8a2ee0_c_d.jpg">Link 2</a>
+      <a id="photo1" imgLink="https://live.staticflickr.com/1728/42736240511_91cd425b59_c_d.jpg" >Link 1</a>
+      <a id="photo2" imgLink="https://live.staticflickr.com/1945/45582150001_7bda8a2ee0_c_d.jpg">Link 2</a>
       <a href="#">Link 3</a>
       <a href="#">Link 4</a>
     </div>
@@ -68,25 +68,27 @@
       </div>
       
     </div>
-    </main>
     <footer class="footer">
       <h4>FOOTER</h4>
     </footer>
+    </main>
+   
     <div class="modal" id="modal-image">
         <div class="modal-content">
-            <span class="modal-switch" onclick="document.getElementById('modal-image').style.display = 'none'">
+            <span class="modal-switch" id="modal-close">
                 &times
             </span>
             <div class="modal-text">
                 I'm a Modal hahaha
             </div>
-            <img id="modal-img" src="https://live.staticflickr.com/1728/42736240511_91cd425b59_c_d.jpg">
+            <img class="modal-img" id="modal-img" src="">
    
         </div>
     </div>
 </div>
   </body>
-
-
+<script src="imageModal.js"></script>
 </html>
+
+
 
